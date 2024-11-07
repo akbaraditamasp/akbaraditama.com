@@ -2,11 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+.provider {
+  @apply font-roboto text-gray-700 dark:text-gray-200;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+.head-decor {
+  @apply relative font-bold font-montserrat text-gray-800 dark:text-white text-xl lg:text-3xl pt-6 lg:pt-10;
+}
+
+.head-decor::before {
+  content: "";
+  @apply w-2 h-2 lg:w-4 lg:h-4 bg-yellow-500 absolute top-0 left-0 rounded-sm;
+}
+
+.head-decor::after {
+  content: "";
+  @apply h-2 w-8 lg:w-16 lg:h-4 bg-yellow-600 absolute top-0 left-4 lg:left-6 rounded-sm;
+}
+
+.head-overlay-bg {
+  background: url("https://arter-react.vercel.app/img/bg.jpg") center no-repeat;
+  background-size: cover;
+  @apply absolute top-0 left-0 right-0 h-64 lg:h-96 opacity-70 dark:opacity-50;
+}
+
+.head-overlay-bg::before {
+  content: "";
+  @apply absolute top-0 left-0 w-full h-full bg-white dark:bg-black opacity-50;
+}
+
+.head-overlay-bg::after {
+  content: "";
+  @apply bg-gradient-to-b from-transparent to-gray-200 dark:to-gray-900 absolute top-0 left-0 w-full h-full backdrop-blur-sm;
+}
+
+.hero-bg {
+  background: url("https://arter-react.vercel.app/img/bg.jpg") center no-repeat;
+  background-size: cover;
+  @apply absolute top-0 left-0 w-full h-full object-cover opacity-50;
+}
+
+.hero-bg::after {
+  content: "";
+  @apply absolute top-0 left-0 w-full h-full bg-black opacity-60;
 }

@@ -5,18 +5,19 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          '"Inter"',
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif",
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
-        ],
+        ubuntu: ['"Ubuntu"', "sans-serif"],
+        roboto: ['"Roboto"', "sans-serif"],
+        montserrat: ['"Montserrat"', "sans-serif"],
+        "roboto-mono": ['"Roboto Mono"', "monospace"],
       },
     },
   },
   plugins: [],
+  darkMode: [
+    "variant",
+    [
+      "@media (prefers-color-scheme: dark) { &:not(.light *) }",
+      "&:is(.dark *)",
+    ],
+  ],
 } satisfies Config;
