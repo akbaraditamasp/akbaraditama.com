@@ -5,4 +5,5 @@ export default {
   imgs: ["njinconvo/hg2xwpdep2jslhl7qwzs"],
   description:
     "NjinConvo adalah aplikasi open-source yang dirancang untuk menyederhanakan dan meningkatkan pengelolaan rapat dan konferensi video dalam organisasi.",
+  link: "https://github.com/njinlabs/njinconvo",
 } as ProjectInformation;

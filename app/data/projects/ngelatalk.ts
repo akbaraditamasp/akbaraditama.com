@@ -5,4 +5,5 @@ export default {
   description:
     "Ngelatalk adalah aplikasi realtime chatting yang menerapkan end-to-end encryption, memastikan kerahasiaan setiap percakapan.",
   imgs: ["ngelatalk/qvy0tzmor7rlmatbjbnt"],
+  link: "https://ngelatalk.lamanhub.site",
 } as ProjectInformation;

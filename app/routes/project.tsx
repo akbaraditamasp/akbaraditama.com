@@ -27,6 +27,7 @@ export default function Project() {
           const project = projects[item as keyof typeof projects];
           return (
             <ProjectCard
+              link={project.link}
               title={project.title}
               description={project.description}
               imgName={project.imgs[0]}

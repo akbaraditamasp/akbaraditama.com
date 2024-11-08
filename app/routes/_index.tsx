@@ -119,7 +119,10 @@ export default function Index() {
         >
           {!showAllSkill ? (
             <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent to-gray-200 dark:to-gray-900 flex justify-center items-end pb-5">
-              <ShowAllButton onClick={() => setShowAllSkill(true)} />
+              <ShowAllButton
+                type="button"
+                onClick={() => setShowAllSkill(true)}
+              />
             </div>
           ) : null}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row gap-3">
@@ -141,6 +144,7 @@ export default function Index() {
               const project = projects[item as keyof typeof projects];
               return (
                 <ProjectCard
+                  link={project.link}
                   title={project.title}
                   description={project.description}
                   imgName={project.imgs[0]}
@@ -150,7 +154,7 @@ export default function Index() {
             })}
         </div>
         <div className="p-5 flex justify-center">
-          <ShowAllButton />
+          <ShowAllButton element={Link} to="/project" />
         </div>
       </div>
       <div>

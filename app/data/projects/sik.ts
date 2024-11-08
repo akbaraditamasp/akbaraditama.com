@@ -5,4 +5,5 @@ export default {
   imgs: ["sik/jbjoxlxgyt28zhckjp7f"],
   description:
     "Sistem Informasi Keuangan berbasis web untuk manajemen pemasukan, pengeluaran, dan saldo awal dengan laporan otomatis dalam format PDF.",
+  link: "https://github.com/akbaraditamasp/sik-backend",
 } as ProjectInformation;

@@ -5,4 +5,5 @@ export default {
   imgs: ["laman.js/ednvcqjlf4vvutsya1lf"],
   description:
     "Laman.js adalah framework web sederhana yang memudahkan pembuatan dan deployment website dengan cepat dan efisien",
+  link: "https://lamanjs.lamanhub.site",
 } as ProjectInformation;

@@ -5,4 +5,5 @@ export default {
   description:
     "Face recognition menggunakan tensorflow & face-api.js di sisi server. Absensi hanya bisa dilakukan oleh orang yang wajahnya sama dengan face model yang telah didaftarkan.",
   imgs: ["njinattend/xfpwisxp8ncrxp7grdw6"],
+  link: "https://github.com/njinlabs/njinattend-backend",
 } as ProjectInformation;

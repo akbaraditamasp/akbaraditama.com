@@ -10,6 +10,7 @@ export type ProjectInformation = {
   title: string;
   imgs: string[];
   description: string;
+  link: string;
 };
 
 export default {
